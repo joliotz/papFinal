@@ -1,0 +1,391 @@
+/*@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }*/
+
+    body {
+        overflow-x: hidden;
+        height: 100%;
+        background-color: #000;
+        background-repeat: no-repeat;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+        
+    }
+
+    body h4,h6,p{
+        color: white
+    }
+
+    body h6{
+        font-size: 19px
+    }
+
+    .datepickerFixe{
+        border-color: black !important;
+        background-color: white !important;
+        color: black !important;
+    }
+
+    .supTxt{
+        font-size: 10px;
+        margin-top: -10px;
+    }
+
+    .verifyBtn{
+        margin-top: 10px;
+    }
+
+    .hrT{
+        width: 765px;
+    }
+
+    .my-auto{
+        color: black !important;
+    }
+    
+    .vsm-text{
+        color:white;
+    }
+    .vsm-text:hover {
+        color: #FF5252
+    }
+    
+    .book,
+    .book-img {
+        width: 120px;
+        height: 180px;
+        border-radius: 5px
+    }
+    
+    .book {
+        margin: 20px 15px 5px 15px
+    }
+    
+    .border-top {
+        border-top: 1px solid #EEEEEE !important;
+        margin-top: 20px;
+        padding-top: 15px
+    }
+
+    .bg{
+        background-color: rgba(121, 121, 124, 0.288);
+    }
+    
+    .card {
+        margin: 40px 0px;
+        padding: 40px 50px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2);
+        background-color: rgba(121, 121, 124, 0.288);
+    }
+    
+    input,
+    textarea {
+        background-color: #F3E5F5;
+        padding: 8px 15px 8px 15px;
+        width: 100%;
+        border-radius: 5px !important;
+        box-sizing: border-box;
+        border: 1px solid #F3E5F5;
+        font-size: 15px !important;
+        color: #000 !important;
+        font-weight: 300
+    }
+    
+    input:focus,
+    textarea:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        border: 1px solid #9FA8DA;
+        outline-width: 0;
+        font-weight: 400
+    }
+    
+    button:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        outline-width: 0
+    }
+    
+    .pay {
+        width: 80px;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #673AB7;
+        margin: 10px 20px 10px 0px;
+        cursor: pointer;
+        box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2)
+    }
+    
+    .gray {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        filter: grayscale(100%);
+        color: #000
+    }
+    
+    .gray .pay {
+        box-shadow: none
+    }
+    
+    #tax {
+        border-top: 1px lightgray solid;
+        margin-top: 10px;
+        padding-top: 10px
+    }
+    
+    .btn-blue {
+        border: none;
+        border-radius: 10px;
+        background-color: #3beb6f;
+        color: #000;
+        padding: 8px 15px;
+        margin: 20px 0px;
+        cursor: pointer
+    }
+    
+    .btn-blue:hover {
+        background-color: #28bb54;
+        color: #000
+    }
+    
+    #checkout {
+        float: left
+    }
+    
+    #check-amt {
+        float: right
+    }
+    
+    @media screen and (max-width: 768px) {
+    
+        .book,
+        .book-img {
+            width: 100px;
+            height: 150px
+        }
+    
+        .card {
+            padding-left: 15px;
+            padding-right: 15px
+        }
+    
+        .mob-text {
+            font-size: 13px
+        }
+    
+        .pad-left {
+            padding-left: 20px
+        }
+    }
+
+    
+    .intro-1 {
+        font-size: 20px
+    }
+    
+    .close {
+        color: #fff
+    }
+    
+    .close:hover {
+        color: #fff
+    }
+    
+    .intro-2 {
+        font-size: 13px
+    }
+    
+    .btn-primary {
+        color: #28bb54;
+        background-color: #fffaff;
+        border-color: #fffaff;
+        padding: 12px;
+        font-weight: 700;
+        border-radius: 41px;
+        width: 100px;
+        margin-left: 25px;
+        margin-right: -30px;
+    }
+
+    .btn-primary:hover {
+        background-color: #28bb54 !important;
+    }
+
+    .container-fluid {
+        padding-top: 120px !important;
+        padding-bottom: 120px !important
+    }
+    
+    .card {
+        box-shadow: 0px 4px 8px 0px #7986CB
+    }
+    
+    input {
+        padding: 10px 20px !important;
+        border: 1px solid #000 !important;
+        border-radius: 10px;
+        box-sizing: border-box;
+        background-color: #616161 !important;
+        color: #fff !important;
+        font-size: 16px;
+        letter-spacing: 1px;
+        width: 180px
+    }
+    
+    input:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        border: 1px solid #512DA8;
+        outline-width: 0
+    }
+    
+    ::placeholder {
+        color: #fff;
+        opacity: 1
+    }
+    
+    :-ms-input-placeholder {
+        color: #fff
+    }
+    
+    ::-ms-input-placeholder {
+        color: #fff
+    }
+    
+    button:focus {
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        outline-width: 0
+    }
+
+    .horas p{
+        align-items: center;
+        color: black;
+        font-size: 10px;
+    }
+
+    .frb-group {
+        margin: 15px 0;
+    }
+    
+    .frb ~ .frb {
+        margin-top: 15px;
+    }
+    
+    .frb input[type="radio"]:empty,
+    .frb input[type="checkbox"]:empty {
+        display: none;
+    }
+    
+    .frb input[type="radio"] ~ label:before,
+    .frb input[type="checkbox"] ~ label:before {
+        font-family: FontAwesome;
+        content: '\f096';
+        position: absolute;
+        top: 50%;
+        margin-top: -11px;
+        left: 15px;
+        font-size: 22px;
+    }
+    
+    .frb input[type="radio"]:checked ~ label:before,
+    .frb input[type="checkbox"]:checked ~ label:before {
+        content: '\f046';
+    }
+    
+    .frb input[type="radio"] ~ label,
+    .frb input[type="checkbox"] ~ label {
+        margin-left: 10px;
+        position: relative;
+        cursor: pointer;
+        width: 97.5%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+    }
+    
+    .frb input[type="radio"] ~ label:focus,
+    .frb input[type="radio"] ~ label:hover,
+    .frb input[type="checkbox"] ~ label:focus,
+    .frb input[type="checkbox"] ~ label:hover {
+        box-shadow: 0px 0px 3px #333;
+    }
+    
+    .frb input[type="radio"]:checked ~ label,
+    .frb input[type="checkbox"]:checked ~ label {
+        color: #fafafa;
+    }
+    
+    .frb input[type="radio"]:checked ~ label,
+    .frb input[type="checkbox"]:checked ~ label {
+        background-color: #f2f2f2;
+    }
+    
+    .frb.frb-default input[type="radio"]:checked ~ label,
+    .frb.frb-default input[type="checkbox"]:checked ~ label {
+        color: #333;
+    }
+    
+    .frb.frb-primary input[type="radio"]:checked ~ label,
+    .frb.frb-primary input[type="checkbox"]:checked ~ label {
+        background-color: #337ab7;
+    }
+    
+    .frb.frb-success input[type="radio"]:checked ~ label,
+    .frb.frb-success input[type="checkbox"]:checked ~ label {
+        background-color: #5cb85c;
+    }
+    
+    .frb.frb-info input[type="radio"]:checked ~ label,
+    .frb.frb-info input[type="checkbox"]:checked ~ label {
+        background-color: #5bc0de;
+    }
+    
+    .frb.frb-warning input[type="radio"]:checked ~ label,
+    .frb.frb-warning input[type="checkbox"]:checked ~ label {
+        background-color: #f0ad4e;
+    }
+    
+    .frb.frb-danger input[type="radio"]:checked ~ label,
+    .frb.frb-danger input[type="checkbox"]:checked ~ label {
+        background-color: #d9534f;
+    }
+    
+    .frb input[type="radio"]:empty ~ label span,
+    .frb input[type="checkbox"]:empty ~ label span {
+        display: inline-block;
+    }
+    
+    .frb input[type="radio"]:empty ~ label span.frb-title,
+    .frb input[type="checkbox"]:empty ~ label span.frb-title {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 5px 5px 5px 50px;
+    }
+    
+    .frb input[type="radio"]:empty ~ label span.frb-description,
+    .frb input[type="checkbox"]:empty ~ label span.frb-description {
+        font-weight: normal;
+        font-style: italic;
+        color: #999;
+        margin: 5px 5px 5px 50px;
+    }
+    
+    .frb input[type="radio"]:empty:checked ~ label span.frb-description,
+    .frb input[type="checkbox"]:empty:checked ~ label span.frb-description {
+        color: #fafafa;
+    }
+    
+    .frb.frb-default input[type="radio"]:empty:checked ~ label span.frb-description,
+    .frb.frb-default input[type="checkbox"]:empty:checked ~ label span.frb-description {
+        color: #999;
+    }

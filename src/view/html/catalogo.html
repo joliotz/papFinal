@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+		<script src="https://code.jquery.com/jquery.min.js"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+		<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>	
+
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="https://kit.fontawesome.com/2c4d58ac63.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" href="http://localhost:3001/files/styles/catalogo.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3001/files/styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3001/files/styles/footer.css">
+ 
+
+
+    <script src="http://localhost:3001/files/controllers/control.js"></script>
+    <script src="http://localhost:3001/files/controllers/navFoot.js"></script>
+
+
+    <script src="http://localhost:3001/files/controllers/particles.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <title>SportAzores | Catálogo</title>
+
+</head>
+
+<body onload="renderNavFootAut();renderFooter();particles();insertCatalog();">
+    
+    
+	<section id="particles-js"></section>
+		
+	<div id="nbar"></div>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+	<div class="container bootdey">
+		<div class="col-md-3">
+			<section class="panel">
+				<div class="panel-body">
+					<input type="text" placeholder="Filtrar por palavra" class="form-control" />
+				</div>
+			</section>
+			<section class="panel">
+				<header class="panel-heading">
+					Filtrar
+				</header>
+				<div class="panel-body">
+					<form role="form product-form">
+						<div class="form-group">
+							<label>Categoria</label>
+							<select class="form-control hasCustomSelect" style="-webkit-appearance: menulist-button; width: 231px; position: absolute; opacity: 0; height: 34px; font-size: 12px;">
+								<option>Todas</option>
+								<option value="7">Atividades Marítimas</option>
+								<option value="8">Atividades de Monte</option>
+								<option value="9">Atividades em Piscina</option>
+								<option value="10">Ténis</option>
+								<option value="11">Golf</option>
+								<option value="12">Atividades em lagos/lagoas</option>
+							</select>
+							<span class="customSelect form-control" style="display: inline-block;"><span class="customSelectInner" style="width: 209px; display: inline-block;">Todas</span></span>
+						</div>
+						<div class="form-group">
+							<label>Preço</label>
+							<select class="form-control hasCustomSelect" style="-webkit-appearance: menulist-button; width: 231px; position: absolute; opacity: 0; height: 34px; font-size: 12px;">
+								<option>0€ - 14,99€</option>
+								<option>15€ - 29,99€</option>
+								<option>30€ - 49,99€</option>
+								<option>+ 50€</option>
+							</select>
+							<span class="customSelect form-control" style="display: inline-block;"><span class="customSelectInner" style="width: 209px; display: inline-block;">0€ - 14,99€</span></span>
+						</div>
+						<button class="btn btn-primary" type="submit">Filtrar</button>
+					</form>
+				</div>
+			</section>
+			<section class="panel">
+				<header class="panel-heading">
+					Melhores Ofertas
+				</header>
+				<div class="panel-body">
+					<div class="best-seller">
+						<article class="media">
+							<a class="pull-left thumb p-thumb">
+								<img src="https://media.discordapp.net/attachments/853331282540232794/942763191031709726/kayaking.png?width=845&height=676" />
+							</a>
+							<div class="media-body">
+								<a href="#" class="p-head">Kayaking</a>
+								<p>Vem explorar as águas de São Miguel ao praticar Kayaking nas nossas lagoas mágicas!</p>
+							</div>
+						</article>
+						<article class="media">
+							<a class="pull-left thumb p-thumb">
+								<img src="https://media.discordapp.net/attachments/853331282540232794/942761977359532032/L08zbS8tME0zWnJTbS95NHNQLlh4c1UuMmxhd2EvaEVqblNtczFzOVo3WkZSWnNQakZUc3BBczZRNi9aRWpuU21zMFo3WkZSWnNyakZUc3lWdHp0ZGty.png?width=1014&height=676" />
+							</a>
+							<div class="media-body">
+								<a href="#" class="p-head">Kayaking</a>
+								<p>Vem explorar as águas de São Miguel ao praticar Kayaking nas nossas lagoas mágicas!</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="col-md-9">
+			<div class="separador" style="margin-top: 7px;"></div>
+			
+			<div class="row product-list" style="margin-top: -34px;">
+				<div id="catalog"></div>
+				<!--
+				<div class="col-md-4">Define uma coluna com o tamanho 4 para medium devices
+					<section class="panel">Cria o painel no geral
+						<div class="pro-img-box">
+							<img src="https://via.placeholder.com/250x220/6495ED/000000" alt="" />Imagem 
+							<a href="#" class="adtocart"> Cria a area do icone de carrinho de compras 
+								<i class="fa fa-shopping-cart"></i>Cria o carrinho de compras(icon)
+							</a>
+						</div>
+
+						<div class="panel-body text-center">cria o painel de texto do card
+							<h4> h4 significa 'header 4' ou seja, é um titulo com a formatação 4 de acordo com o bootstrap
+								<a href="#" class="pro-title">
+									Leopard Shirt Dress Nome do produto
+								</a>
+							</h4>
+							<p class="price">$300.00</p> Preço do produto
+						</div>
+					</section>-->
+				</div>
+
+			</div>
+			
+		</div>
+	</div>
+
+	
+
+	<div id="footer"></div>
+</body>
+</html>

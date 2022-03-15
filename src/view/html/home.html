@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"rel="stylesheet"/>
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css"
+    rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://localhost:3001/files/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3001/files/styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3001/files/styles/footer.css">
+
+    <script src="http://localhost:3001/files/controllers/particles.js"></script>
+    <script src="http://localhost:3001/files/controllers/control.js"></script>
+    <script src="http://localhost:3001/files/controllers/navFoot.js"></script>
+
+    <title>SportAzores | Página Principal</title>
+</head>
+
+<body class="bg-color" onload="particles(); renderNavFootAut();renderFooter();insertRecom();">
+    <section id="particles-js"></section>
+    
+    <div id="nbar"></div>
+    <div class="separador" style="margin-top: 150px;"></div>
+    <div class="container"> <!--Criar um contentor de conteúdos, é do bootstrap.-->
+        <h1 class="section-header" style="padding-left: 90px;">WELCOME</h1> <!--É o texto que aparece no ínicio da página-->
+        <div class="row"><!--cria uma linha onde depois são criadas colunas, função do bootstrap-->
+            <div class="col-5" ><!--Cria uma coluna com o tamanho 5, o tamanho máximo da linha é de 12-->
+                <div class="introTxt"><!--Cria o texto de apresentação-->
+                    Bem-Vindo, nós somos a SportAzores é uma empresa de atividades e desportos direcionada para turistas, desde o ar até ao mar estamos disponiveis para 
+                    tornar as tuas férias melhores. <br>Faz já o teu plano e prepara-te para te divertires! Traz a tua família e amigos para uma experiência melhor!
+                     <br>Começa já ao clicar no botão abaixo...
+                </div>
+                <div class="separador" style="margin-top: -8px;"></div><!--cria um separador com o tamanho -8, usado para reduzir o espaço entre o botão abaixo-->
+                <div class="buttons"><!--cria o botão de ver mais-->
+                    <a href="catalog"><!--a página onde o utilizador é direcionado depois de clicar no botão-->
+                        <span></span><!--as linhas da animação à volta do botão-->
+                        <span></span><!--as linhas da animação à volta do botão-->
+                        <span></span><!--as linhas da animação à volta do botão-->
+                        <span></span> <!--as linhas da animação à volta do botão-->
+                        <b>Ver Mais...</b><!--texto do botão-->
+                    </a>
+                </div>
+            </div>
+            <div class="col"style="margin-top: -75px;"><!--Reduz o tamanho do espaço do topo da página e cria uma coluna com o tamanho automático-->
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" ><!--cria a base do carrossel de imagens-->
+                    <div class="carousel-inner"><!--cria a zona onde as imagens aparecem-->
+                        <div class="carousel-item active"><!--posiciona a imagem e define como 'active', ou seja, é a primeira imagem a aparecer de seguida as outras aparecem-->
+                            <img src="http://localhost:3001/files/assets/sm" style="border-radius: 10px;" class="d-block w-100" alt="image"><!--definir a imagem-->
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://s1.1zoom.me/big7/544/Scenery_Portugal_Azores_350331.jpg" style="border-radius: 10px;" class="d-block w-100" alt="image"><!--definir a imagem-->
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://img.bondlayer.com/nfnaxi8frd/_assets/sustainable-destination-acores-ep10.jpg?auto=format&fit=crop&w=1920" style="border-radius: 10px;" class="d-block w-100" alt="image">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"data-bs-slide="prev"><!--cria o botão de 'voltar' à img anterior-->
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span><!--define o icon-->
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"data-bs-slide="next"><!--cria o botão de 'saltar' para img anterior-->
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span><!--define o icon-->
+                        <span class="visually-hidden">Próxima</span>
+                    </button>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="separador" style="margin-top: 300px;"></div>
+
+        
+
+        
+       
+
+
+    </div>
+
+
+    <div class="recom mt-5" id="recommended">
+        <div class="container">
+            <h1 class="section-header" style="text-align: center;">recomendações</h1>
+            <div id="cards_landscape_wrap-2">
+                <div class="container">
+                    <div class="row" id="productsCard">
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="text-container"></div>
+            <h1 class="section-header">SOBRE NÓS</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="aboutUs">
+                        SportAzores é uma empresa de vendas direcionada para turistas. Fundado em fevereiro de 2022 de forma a ajudar os visitantes de São Miguel 
+                        a planear as suas férias tanto com atividades como desportos. <br> <br> 
+                    </div>
+                    <h1>OBJETIVOS</h1>
+                    <div class="aboutUs">
+                        Em breve iremos expandir para todas as ilhas dos Açores e talvez até para o Arquipélago da Madeira. Um dos nossos objetivos é também adicionar com
+                        maior número de atividades existentes nos Arquipélagos!
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=S%C3%A3o%20Miguel&t=k&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.online-timer.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:500px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;}</style></div></div>
+                </div>
+            </div>
+        </div>
+
+
+        
+                
+                
+        
+
+
+
+    </div>
+    <div class="sep" style="margin-bottom: 25px;"></div>
+
+    <div id="footer" ></div>
+    
+        <br><br><br><br><br><br>
+        
+    
+</body>
+</html>
