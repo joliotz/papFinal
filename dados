@@ -1,0 +1,33 @@
+/*Inserir Empresas*/
+INSERT INTO `sportazores`.`companies` (`companiesID`, `companyName`, `companyRepresentante`) VALUES ('ASS', 'Azores Surf School', 'André Caetano');
+INSERT INTO `sportazores`.`companies` (`companiesID`, `companyName`, `companyRepresentante`) VALUES ('ATSM', 'Associação de Ténis de São Miguel', 'Ana Romeu');
+INSERT INTO `sportazores`.`companies` (`companiesID`, `companyName`, `companyRepresentante`) VALUES ('AASM', 'Associação de Atletismo de São Miguel', 'Pedro Mota');
+INSERT INTO `sportazores`.`companies` (`companiesID`, `companyName`, `companyRepresentante`) VALUES ('PA', 'Picos de Aventura', 'Jorge Almeida');
+INSERT INTO `sportazores`.`companies` (`companiesID`, `companyName`, `companyRepresentante`) VALUES ('AQF', 'Aquafit', 'Rodrigo Rocha');
+INSERT INTO `sportazores`.`companies` (`companiesID`, `companyName`, `companyRepresentante`) VALUES ('BGC', 'Batalha Golf Course', 'José Pereira');
+INSERT INTO `sportazores`.`companies` (`companiesID`, `companyName`, `companyRepresentante`) VALUES ('IDP', 'Empresa Idependente', 'Madalena Nunes');
+
+/*Inserir Treinadores*/
+INSERT INTO `sportazores`.`treinadores` (`nomeTreinador`, `fotoTreinador`, `companies_companiesID`) VALUES ('Pedro Gouveia', 'https://beachcam.meo.pt/media/3787685/frederico-morais-4-surfista-mais-popular-do-mundo-1.jpg?width=500&height=500', 'ASS');
+INSERT INTO `sportazores`.`treinadores` (`nomeTreinador`, `fotoTreinador`, `companies_companiesID`) VALUES ('Ana Garrafa', 'https://beachcam.meo.pt/media/3794960/surf-3.jpg?width=500&height=500', 'ASS');
+INSERT INTO `sportazores`.`treinadores` (`nomeTreinador`, `fotoTreinador`, `companies_companiesID`) VALUES ('João Pedro', 'https://cdn.shopify.com/s/files/1/0383/5441/articles/perfect-body_500x.jpg?v=1583915959', 'ASS');
+
+/*Inserir Pagamentos*/
+INSERT INTO `sportazores`.`payment_methods` (`methodID`, `methodDescription`) VALUES ('PayPal', 'PayPal');
+INSERT INTO `sportazores`.`payment_methods` (`methodID`, `methodDescription`) VALUES ('VISA', 'VISA');
+INSERT INTO `sportazores`.`payment_methods` (`methodID`, `methodDescription`) VALUES ('MasterCard', 'MasterCard');
+
+/*Inserir categorias*/
+INSERT INTO `sportazores`.`productcategories` (`categoryName`, `categoryDescription`) VALUES ('Mar', 'Atividades Marinhas');
+INSERT INTO `sportazores`.`productcategories` (`categoryName`, `categoryDescription`) VALUES ('Montanha', 'Atividades de Monte');
+INSERT INTO `sportazores`.`productcategories` (`categoryName`, `categoryDescription`) VALUES ('Piscina', 'Atividades de Piscina');
+INSERT INTO `sportazores`.`productcategories` (`categoryName`, `categoryDescription`) VALUES ('Ténis', 'Treino Ténis');
+INSERT INTO `sportazores`.`productcategories` (`categoryName`, `categoryDescription`) VALUES ('Lazer', 'Lazer');
+INSERT INTO `sportazores`.`productcategories` (`categoryName`, `categoryDescription`) VALUES ('Ribeira', 'Ribeiras');
+
+/*Inserir produtos*/
+INSERT INTO `sportazores`.`products` (`productName`, `productDescription`, `productPrice`, `productImage`, `categoryID`, `companiesID`, `vagas`, `avaliacao`, `redirect`) VALUES ('Treino de Ténis', 'Torna-te um jogador ténis durante as tuas férias para depois disputares uns jogos com os teus amigos!', '27,99', 'https://media.discordapp.net/attachments/853331282540232794/914249845676576808/c474d99e-medvedev-960x637.png', '16', 'ATSM', '25', '0.0', '/tenis');
+INSERT INTO `sportazores`.`products` (`productName`, `productDescription`, `productPrice`, `productImage`, `categoryID`, `companiesID`, `vagas`, `avaliacao`, `redirect`) VALUES ('Ginástica Aquática', 'Vem exercitar o teu corpo debaixo de água com as aulas na excelente piscina da Lagoa!', '43,49', 'https://media.discordapp.net/attachments/853331282540232794/942627808113487892/Depositphotos_11986907_m-2015.png', '15', 'AQF', '10', '0.0', '/ginasticaAquatica');
+INSERT INTO `sportazores`.`products` (`productName`, `productDescription`, `productPrice`, `productImage`, `categoryID`, `companiesID`, `vagas`, `avaliacao`, `redirect`) VALUES ('Observação de Baleias', 'Vem conhecer estes gigantes dos oceanos visitando o habitat deles de barco!', '60,00', 'https://media.discordapp.net/attachments/853331282540232794/942759914542080040/4184-whale-sao-miguel-1575398827-jpg.png?width=1013&height=676', '13', 'PA', '17', '0.0', '/observaBaleias');
+INSERT INTO `sportazores`.`products` (`productName`, `productDescription`, `productPrice`, `productImage`, `categoryID`, `companiesID`, `vagas`, `avaliacao`, `redirect`) VALUES ('Jogo de Golfe', 'Vem passar um dia de golfe com a tua familia! Almoço e lanche incluido!', '58,00', 'https://media.discordapp.net/attachments/853331282540232794/942761977359532032/L08zbS8tME0zWnJTbS95NHNQLlh4c1UuMmxhd2EvaEVqblNtczFzOVo3WkZSWnNQakZUc3BBczZRNi9aRWpuU21zMFo3WkZSWnNyakZUc3lWdHp0ZGty.png?width=1014&height=676', '17', 'BGC', '8', '0.0', '/golf');
+INSERT INTO `sportazores`.`products` (`productName`, `productDescription`, `productPrice`, `productImage`, `categoryID`, `companiesID`, `vagas`, `avaliacao`, `redirect`) VALUES ('Kyaking', 'Vem explorar as águas de São Miguel ao praticar Kayaking nas nossas lagoas mágicas!', '25,00', 'https://media.discordapp.net/attachments/853331282540232794/942763191031709726/kayaking.png?width=845&height=676', '18', 'IDP', '12', '0.0', '/kayaking');
